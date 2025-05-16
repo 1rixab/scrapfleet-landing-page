@@ -1,4 +1,3 @@
-const hamburgerBtn = document.getElementById("hamburger-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenuBtn = document.getElementById("close-menu-btn");
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
@@ -9,7 +8,6 @@ function toggleMobileMenu() {
   mobileMenu.classList.toggle("hidden");
 }
 
-hamburgerBtn.addEventListener("click", toggleMobileMenu);
 closeMenuBtn.addEventListener("click", toggleMobileMenu);
 mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", toggleMobileMenu);
@@ -57,3 +55,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+
+
