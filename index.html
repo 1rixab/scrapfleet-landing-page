@@ -422,6 +422,7 @@
     </footer>
 
     <script>
+      let customername = document.getElementById('name').value
       var form = document.getElementById("sheetdb-form");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -432,31 +433,12 @@
           // .then((response) => response.json())
           .then((html) => {
             alert(
-              "Submitted !! 😊 Thank you " +
-                document.getElementById("uname").value
-            );
+            `THANK YOU, Your details have been successfully submitted. We appreciate your time and will get back to you shortly.`
+          );
 
             window.location.href = "";
             location.reload();
           });
-      });
-
-      let submitbtn = document.getElementById("submitbtn");
-      let nameinp = document.getElementById("name");
-
-      submitbtn.addEventListener("click", () => {
-        let storename = document.getElementById("name").value;
-        document.getElementById("name").value = "";
-        document.getElementById("phone").value = "";
-        document.getElementById("address").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("vehicleDescription").value = "";
-        setTimeout(() => {
-          alert(
-            `THANK YOU, ${storename} Your details have been successfully submitted. We appreciate your time and will get back to you shortly.`
-          );
-          storename = "";
-        }, 1000);
       });
     </script>
   </body>
