@@ -1,0 +1,12 @@
+#mainlogo{
+  height: 4.5em;
+  padding: 0;
+}
+#header-container{
+  width: 100%;
+  height: 5vh;
+}
+.sficons{
+  height: 3em;
+  margin: 1em;
+}
